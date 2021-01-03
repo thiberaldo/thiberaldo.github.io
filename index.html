@@ -27,18 +27,54 @@
     .sans-serif {
       font-family: 'Raleway', sans-serif;
     }
-
     p {
       line-height: 3em;
     }
-
     .zoom {
       cursor: pointer;
       transition: -webkit-transform 0.25s ease;
     }
-
     .zoom:active {
       -webkit-transform: scale(2);
+    }
+    .photos {
+      /* Prevent vertical gaps */
+      line-height: 0;
+
+      -webkit-column-count: 4;
+      -webkit-column-gap:   4px;
+      -moz-column-count:    4;
+      -moz-column-gap:      4px;
+      column-count:         4;
+      column-gap:           4px;
+    }
+    .photos img {
+      max-width: 100% !important;
+      width: 100% !important;
+      margin-bottom: 3px;
+    }
+    .before-after-photos {
+      /* Prevent vertical gaps */
+      line-height: 0;
+
+      -webkit-column-count: 3;
+      -webkit-column-gap:   4px;
+      -moz-column-count:    3;
+      -moz-column-gap:      4px;
+      column-count:         3;
+      column-gap:           4px;
+    }
+    .before-after-photos img {
+      max-width: 100% !important;
+      width: 100% !important;
+      margin-bottom: 3px;
+    }
+    @media (max-width: 1000px) {
+      .photos {
+        -moz-column-count:    3;
+        -webkit-column-count: 3;
+        column-count:         3;
+      }
     }
   </style>
   <body class="pa4 ph7-l pv6-l sans-serif black-80 bg-white">
@@ -47,7 +83,7 @@
     </div>
 
     <div class="w-100 f3 mt4">
-      <h1 class="f2 i w-100 pv4 tc">Thiago Beraldo</h1>
+      <h1 class="f1 w-100 pv4 tc">Thiago Beraldo</h1>
       <p class="f5 f3-l tj tl-l">Olá pessoal meu nome é Thiago Beraldo, atuo como personal trainer e fisiologista especialista, trabalho com musculação há quase 15 anos.
       Sou professor de educação física bacharelado e licenciado, possuo 4 (quatro) pós graduações na área e estou no último semestre de Nutrição.
       Além de atleta fisiculturista, sou treinador de atletas certificado internacionalmente pela IFBB com o curso ADVANCED BODYBUILDING AND FITNESS TRAINER SPECIALIST.</p>
@@ -56,7 +92,7 @@
     </div>
 
     <div class="w-100 tc">
-      <h2 class="f3 f2-l i w-100 pv4-l tc">Aplicativo exclusivo para meus alunos</h2>
+      <h2 class="f3 f2-l w-100 pv4-l tc">Aplicativo exclusivo para meus alunos</h2>
 
       <a class="dib w4 w5-l br3 bg-black pv1" href="https://play.google.com/store/apps/details?id=app.mfit.beraldopersonal" target="_blank">
         <img src="images/play-store-button-final.png" />
@@ -64,69 +100,68 @@
     </div>
 
     <div class="w-100 f3 mt4">
-      <h2 class="f3 f2-l i w-100 pv4-l tc">Alunos Personal</h2>
-      <ul class="pa0 list w-100 flex flex-row flex-wrap">
-
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/alejandra.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/amelia.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/andrewrenata.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/arnolfo.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/denise.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/elza2.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/elza.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/fabi.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/jao-babi.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/jao.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/jefferson.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/leisa.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/lucas2.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/lucas.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/maura.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/norma..jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/pedro.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/ramon.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/rovi.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/rui.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/samuel.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-personal/ze luiz.jpg" /></li>
-      </ul>
+      <h2 class="f3 f2-l w-100 pv4-l tc">Alunos Personal</h2>
+      <div class="photos list w-100">
+        <img class="br2 zoom" src="images/alunos-personal/alejandra.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/amelia.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/andrewrenata.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/arnolfo.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/denise.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/elza2.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/elza.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/fabi.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/jao-babi.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/jao.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/jefferson.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/leisa.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/lucas2.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/lucas.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/maura.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/norma..jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/pedro.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/ramon.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/rovi.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/rui.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/samuel.jpg" />
+        <img class="br2 zoom" src="images/alunos-personal/ze luiz.jpg" />
+      </div>
     </div>
 
     <div class="w-100 f3 mt4">
-      <h2 class="f3 f2-l i w-100 pv4-l tc">Consultorias</h2>
-      <ul class="pa0 list w-100 flex flex-row flex-wrap">
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/1.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/2.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/3.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/4.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/5.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/6.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/7.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/8.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/9.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/10.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/11.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/12.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/13.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/14.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/15.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/16.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/17.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/18.jpg" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/alunos-consultoria/19.jpg" /></li>
-      </ul>
+      <h2 class="f3 f2-l w-100 pv4-l tc">Consultorias</h2>
+      <div class="photos pa0 w-100">
+        <img class="br2 zoom" src="images/alunos-consultoria/1.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/2.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/3.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/4.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/5.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/6.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/7.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/8.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/9.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/10.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/11.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/12.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/13.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/14.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/15.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/16.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/17.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/18.jpg" />
+        <img class="br2 zoom" src="images/alunos-consultoria/19.jpg" />
+      </div>
     </div>
 
     <div class="w-100 f3 mt4">
-      <h2 class="f3 f2-l i w-100 pv4-l tc">Antes e Depois</h2>
-      <ul class="pa0 list w-100 flex flex-row flex-wrap">
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/antes_depois1" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/antes_depois2" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/antes_depois3" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/antes_depois4" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/antes_depois5" /></li>
-        <li class="w-third w-25-l pa2"><img class="br2 zoom" src="images/antes_depois6" /></li>
-      </ul>
+      <h2 class="f3 f2-l w-100 pv4-l tc">Antes e Depois</h2>
+      <div class="before-after-photos pa0 w-100">
+        <img class="br2 zoom" src="images/antes_depois1" />
+        <img class="br2 zoom" src="images/antes_depois2" />
+        <img class="br2 zoom" src="images/antes_depois3" />
+        <img class="br2 zoom" src="images/antes_depois4" />
+        <img class="br2 zoom" src="images/antes_depois5" />
+        <img class="br2 zoom" src="images/antes_depois6" />
+      </div>
     </div>
   </body>
 </html>
