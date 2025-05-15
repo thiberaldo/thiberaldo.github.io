@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
   <script>
-    document.location.href = "https://";
+    document.location.href = "https://linktr.ee/pesquisausjt";
   </script>
   <body class="pa4 ph7-l pv6-l sans-serif black-80 bg-white">Redirecionando...</body>
 </html>
